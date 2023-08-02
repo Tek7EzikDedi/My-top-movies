@@ -87,7 +87,7 @@ def add():
 
         headers = {
             "accept": "application/json",
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzYmM2MDkyNzE3YmVlZGMzYTA1ZTRkMDgwOTQzNWVmMiIsInN1YiI6IjY0N2RlY2QyMTc0OTczMDExODcyMjg1NiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.EOYP4kGpZTPMGs-XbxE2-KKA7AWKsgOQmcZ1tL9P1rw"
+            "Authorization": os.environ["Authorization"]
         }
         params = {
             "query": f"{form.title.data}"
